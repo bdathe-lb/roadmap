@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS-Roadmap</title>
+  <meta name="description" content="2026-09 到 2027-09 的求职路线图：C++ 后端主线、算法线、AI 支线，点开关卡查看阶段目标与通关条件。">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23132a24'/%3E%3Cpath d='M2 12h3v-2h2V8h2V6h3V4h2' stroke='%23e8b846' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="stage">
+    <div class="map" id="map">
+      <svg class="terrain" id="terrain" viewBox="0 0 1600 860" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="hudbar">
+        <div class="hb"><h1>CS-Roadmap</h1></div>
+        <div class="sep"></div>
+        <div class="hb-exp"><span>EXP</span><div class="bar"><div class="bar-fill" id="expbar" style="width:0%"></div></div><b id="expn">0</b><b>/ 14</b></div>
+        <div class="hb-cur" id="stagenow"></div>
+        <div class="sep"></div>
+        <div class="hb-leg">
+          <div><i class="a"></i>主线</div><div><i class="b"></i>算法</div><div><i class="c"></i>AI 支线</div>
+        </div>
+        <div class="hb-clock">
+          <div class="c"><span>距投递</span><b id="d1">—</b><em>天</em></div>
+          <div class="c"><span>距秋招</span><b id="d2">—</b><em>天</em></div>
+        </div>
+        <div class="sep"></div>
+        <div class="hb-tools"><span class="sync" id="sync"></span><button id="reset">重置</button></div>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="dlg"><div class="box" id="boxc"></div></dialog>
+  <script src="assets/app.js"></script>
+</body>
+</html>
